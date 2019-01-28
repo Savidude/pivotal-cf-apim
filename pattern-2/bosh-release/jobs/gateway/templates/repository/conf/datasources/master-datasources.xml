@@ -36,14 +36,14 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:mysql://<%= p("wso2apim.carbon_db.hostname") %>:3306/<%= p("wso2apim.carbon_db.db_name") %>?autoReconnect=true&amp;useSSL=false</url>
+                    <url>jdbc:<%= p("wso2apim.carbon_db.database") %>://<%= p("wso2apim.carbon_db.hostname") %>:<%= p("wso2apim.carbon_db.port") %>/<%= p("wso2apim.carbon_db.db_name") %>?autoReconnect=true&amp;useSSL=false</url>
                     <username><%= p("wso2apim.carbon_db.username") %></username>
                     <password><%= p("wso2apim.carbon_db.password") %></password>
                     <driverClassName><%= p("wso2apim.carbon_db.driver") %></driverClassName>
                     <maxActive>50</maxActive>
                     <maxWait>60000</maxWait>
                     <testOnBorrow>true</testOnBorrow>
-                    <validationQuery>SELECT 1</validationQuery>
+                    <validationQuery><%= p("wso2apim.carbon_db.query") %></validationQuery>
                     <validationInterval>30000</validationInterval>
                 </configuration>
             </definition>
@@ -57,7 +57,7 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:mysql://<%= p("wso2apim.carbon_db.hostname") %>:3306/<%= p("wso2apim.carbon_db.db_name") %>?autoReconnect=true&amp;useSSL=false</url>
+                    <url>jdbc:<%= p("wso2apim.carbon_db.database") %>://<%= p("wso2apim.carbon_db.hostname") %>:<%= p("wso2apim.carbon_db.port") %>/<%= p("wso2apim.carbon_db.db_name") %>?autoReconnect=true&amp;useSSL=false</url>
                     <username><%= p("wso2apim.carbon_db.username") %></username>
                     <password><%= p("wso2apim.carbon_db.password") %></password>
                     <!--<driverClassName>com.mysql.jdbc.Driver</driverClassName>-->
@@ -65,7 +65,7 @@
                     <maxActive>50</maxActive>
                     <maxWait>60000</maxWait>
                     <testOnBorrow>true</testOnBorrow>
-                    <validationQuery>SELECT 1</validationQuery>
+                    <validationQuery><%= p("wso2apim.carbon_db.query") %></validationQuery>
                     <validationInterval>30000</validationInterval>
                 </configuration>
             </definition>
