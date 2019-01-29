@@ -36,7 +36,7 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:<%= p("wso2apim.carbon_db.database") %>://<%= p("wso2apim.carbon_db.hostname") %>:<%= p("wso2apim.carbon_db.port") %>/<%= p("wso2apim.carbon_db.db_name") %>?autoReconnect=true&amp;useSSL=false</url>
+                    <url><%= p("wso2apim.carbon_db.jdbc_url") %></url>
                     <username><%= p("wso2apim.carbon_db.username") %></username>
                     <password><%= p("wso2apim.carbon_db.password") %></password>
                     <driverClassName><%= p("wso2apim.carbon_db.driver") %></driverClassName>

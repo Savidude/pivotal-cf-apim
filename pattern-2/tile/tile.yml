@@ -31,12 +31,15 @@ forms:
   label: Carbon DB connection information
   description: WSO2 API Manager - Carbon Database connection information
   properties:
-  - name: carbon_db_database
+  - name: carbon_jdbc_url
+    type: string
+    label: JDBC URL
+  - name: carbon_db_driver
     type: dropdown_select
-    label: Database
+    label: Driver Class Name
     options:
-    - name: mysql
-      label: mysql
+    - name: com.mysql.jdbc.Driver
+      label: com.mysql.jdbc.Driver
       default: true
     - name: mssql
       label: mssql
@@ -44,18 +47,6 @@ forms:
       label: postgres
     - name: oracle
       label: oracle
-  - name: carbon_db_hostname
-    type: string
-    label: Hostname
-  - name: carbon_db_name
-    type: string
-    label: Database Name
-  - name: carbon_db_port
-    type: integer
-    label: Port
-  - name: carbon_db_driver
-    type: string
-    label: Driver Class Name
   - name: carbon_db_query
     type: string
     label: Validation Query
@@ -136,10 +127,7 @@ packages:
     properties:
       wso2apim:
         carbon_db:
-          database: (( .properties.carbon_db_database.value ))
-          hostname: (( .properties.carbon_db_hostname.value ))
-          db_name: (( .properties.carbon_db_name.value ))
-          port: (( .properties.carbon_db_port.value ))
+          jdbc_url: (( .properties.carbon_jdbc_url.value ))
           driver: (( .properties.carbon_db_driver.value ))
           query: (( .properties.carbon_db_query.value ))
           username: (( .properties.carbon_db_username.value ))

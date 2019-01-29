@@ -55,14 +55,8 @@ properties:
   wso2apim.address:
     description: wso2apim address
 
-  wso2apim.carbon_db.database:
-    description: WSO2 Carbon database type
-  wso2apim.carbon_db.hostname:
-    description: WSO2 Carbon database server hostname
-  wso2apim.carbon_db.db_name:
-    description: WSO2 Carbon database database name
-  wso2apim.carbon_db.port:
-    description: WSO2 Carbon database database port
+  wso2apim.carbon_db.jdbc_url:
+    description: WSO2 Carbon JDBC URL
   wso2apim.carbon_db.driver:
     description: WSO2 Carbon database database driver name
   wso2apim.carbon_db.query:
