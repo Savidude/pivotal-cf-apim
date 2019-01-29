@@ -170,10 +170,7 @@ packages:
     properties:
       wso2apim:
         carbon_db:
-          database: (( .properties.carbon_db_database.value ))
-          hostname: (( .properties.carbon_db_hostname.value ))
-          db_name: (( .properties.carbon_db_name.value ))
-          port: (( .properties.carbon_db_port.value ))
+          jdbc_url: (( .properties.carbon_jdbc_url.value ))
           driver: (( .properties.carbon_db_driver.value ))
           query: (( .properties.carbon_db_query.value ))
           username: (( .properties.carbon_db_username.value ))
@@ -211,10 +208,7 @@ packages:
     properties:
       wso2apim:
         carbon_db:
-          database: (( .properties.carbon_db_database.value ))
-          hostname: (( .properties.carbon_db_hostname.value ))
-          db_name: (( .properties.carbon_db_name.value ))
-          port: (( .properties.carbon_db_port.value ))
+          jdbc_url: (( .properties.carbon_jdbc_url.value ))
           driver: (( .properties.carbon_db_driver.value ))
           query: (( .properties.carbon_db_query.value ))
           username: (( .properties.carbon_db_username.value ))
@@ -252,10 +246,7 @@ packages:
     properties:
       wso2apim:
         carbon_db:
-          database: (( .properties.carbon_db_database.value ))
-          hostname: (( .properties.carbon_db_hostname.value ))
-          db_name: (( .properties.carbon_db_name.value ))
-          port: (( .properties.carbon_db_port.value ))
+          jdbc_url: (( .properties.carbon_jdbc_url.value ))
           driver: (( .properties.carbon_db_driver.value ))
           query: (( .properties.carbon_db_query.value ))
           username: (( .properties.carbon_db_username.value ))
