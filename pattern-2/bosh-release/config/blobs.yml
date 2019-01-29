@@ -1,20 +1,20 @@
 mysqldriver/mysql-connector-java-5.1.45-bin.jar:
   size: 999810
-  object_id: 4a7e560f-e36b-40d0-6939-4caa89f8f061
+  object_id: 02579f21-2b4b-40af-4ac6-1916c2124d56
   sha: 6223be933fbc8d81f819aacad0ce09346d5911c4
 openjdk/OpenJDK8U-jdk_x64_linux_hotspot_8u192b12.tar.gz:
   size: 78343064
-  object_id: e9eb89cb-9f2f-41ae-788d-4ab67e4a0884
+  object_id: 9fa0e557-726a-4bac-63d4-35f191dc7dae
   sha: cb98715582bd68170cf00f9c2801e7162c73c8f8
 wso2am/wso2am-2.6.0.zip:
   size: 444084271
-  object_id: 0ade99bb-0ae0-40f7-485a-77f4fbff8ca7
+  object_id: c310f1f4-5ad6-4dc3-549c-0f73ae6ba251
   sha: c31c9c9dd87a6a6065779c28c6908bd76e4914f3
 wso2am_analytics/wso2am-analytics-2.6.0.zip:
   size: 180832478
-  object_id: c88be594-f2ef-48fd-7d32-4fae1c0eb114
+  object_id: ab541f24-b76f-4900-5d8a-5569de3149a9
   sha: b60e811d5abb500f5793cc73012f1040bc2a88c0
 wso2is_km/wso2is-km-5.7.0.zip:
   size: 536044196
-  object_id: 46ce3440-809f-405f-7c75-f445e654feed
+  object_id: aaec858c-9e26-4b03-4496-d6835cf1c1dc
   sha: 5c4e2a7e838340c92c77541ac3cec07c34a2e4dd
