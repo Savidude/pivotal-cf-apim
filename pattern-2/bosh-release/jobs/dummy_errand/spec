@@ -1,0 +1,9 @@
+---
+name: dummy_errand
+
+templates:
+    run.sh: bin/run
+
+packages: []
+
+properties: {}
