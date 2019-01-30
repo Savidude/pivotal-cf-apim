@@ -228,6 +228,11 @@ packages:
         nats:
           from: nats
           deployment: (( ..cf.deployment_name ))
+    - name: dummy_errand
+      release: no-op-release
+      colocated: true
+      post_deploy: true
+      run_default: on
     memory: 4096
     ephemeral_disk: 4096
     persistent_disk: 16384
@@ -256,19 +261,6 @@ packages:
           registration_interval: 20s
           uris:
           - wso2apim.(( ..cf.cloud_controller.system_domain.value ))
-    post_deploy_errands:
-    - name: example_colocated_errand
-      colocated: true
-      run_default: on
-      label: colocated errand on web_server
-      description: This errand does little more than print a message in order to prove colocated errands work.
-    job_types:
-    - name: example_colocated_errand
-      description: The very best illustrative errand that prints all the properties, including secrets.
-      templates:
-      - name: dummy_errand
-        release: dummy_errand
-      errand: true
   - name: gateway
     instances: 2
     templates:
