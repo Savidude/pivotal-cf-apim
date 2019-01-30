@@ -229,7 +229,7 @@ packages:
           from: nats
           deployment: (( ..cf.deployment_name ))
     - name: dummy_errand
-      release: no-op-release
+      release: wso2am-release
       colocated: true
       post_deploy: true
       run_default: on
