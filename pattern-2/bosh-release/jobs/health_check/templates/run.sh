@@ -26,4 +26,4 @@ storeHealthCheckEP="https://localhost:9443/store/site/pages/login.jag"
 
 health_check ${publisherHealthCheckEP} Publisher
 health_check ${storeHealthCheckEP} Store
-exit 0
+exit 1
