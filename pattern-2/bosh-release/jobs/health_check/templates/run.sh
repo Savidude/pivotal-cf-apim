@@ -4,7 +4,7 @@ set -e
 
 health_check() {
     # Check if health check endpoint is alive
-    if curl --output /dev/null --silent --head --fail -k "$1"
+    if curl --output /dev/null --silent --fail -k "$1"
     then
         status_code=$(curl --write-out %{http_code} --silent --output /dev/null -k ${1})
 
@@ -21,9 +21,7 @@ health_check() {
     fi
 }
 
-publisherHealthCheckEP="https://localhost:9443/publisher/site/pages/login.jag"
-storeHealthCheckEP="https://localhost:9443/store/site/pages/login.jag"
+carbonHealthCheckEP="https://localhost:9443/carbon/admin/login.jsp"
 
-health_check ${publisherHealthCheckEP} Publisher
-health_check ${storeHealthCheckEP} Store
+health_check ${carbonHealthCheckEP} Carbon
 exit 0
